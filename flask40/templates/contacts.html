@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <style>
+        /* Повторяем стили для меню */
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Главная</a>
+        <a href="{{ url_for('blog') }}">Блог</a>
+        <a href="{{ url_for('contacts') }}">Контакты</a>
+    </nav>
+    <h1>Контактная информация</h1>
+    <p>Телефон: +7 (123) 456-78-90</p>
+    <p>Email: example@mail.com</p>
+    <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+</body>
+</html>

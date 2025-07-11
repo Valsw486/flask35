@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <style>
+        /* Простая стилизация меню */
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Главная</a>
+        <a href="{{ url_for('blog') }}">Блог</a>
+        <a href="{{ url_for('contacts') }}">Контакты</a>
+    </nav>
+    <h1>Добро пожаловать на главную страницу!</h1>
+    <p>Это пример Flask-приложения с несколькими страницами.
+
+    Это главная страница: ляля-ляля-ляляля
+
+    </p>
+</body>
+</html>

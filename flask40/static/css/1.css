@@ -1,0 +1,10 @@
+css_content = """
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+"""
+
+# Создаем и записываем содержимое в файл
+with open('style.css', 'w') as file:
+    file.write(css_content)
