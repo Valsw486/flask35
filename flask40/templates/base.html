@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Мой сайт{% endblock %}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        header { background-color: #f8f8f8; padding: 10px; }
+        nav a { margin: 0 10px; text-decoration: none; color: #333; }
+        footer { margin-top: 20px; font-size: 0.9em; color: #777; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Добро пожаловать!{% endblock %}</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Главная</a>
+            <a href="{{ url_for('about') }}">О нас</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        {% block footer %}© 2025 Мой сайт{% endblock %}
+    </footer>
+</body>
+</html>
